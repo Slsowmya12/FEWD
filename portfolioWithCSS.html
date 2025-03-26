@@ -43,6 +43,29 @@
         a:hover {
             text-decoration: underline;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -69,8 +92,8 @@
         <section id="projects">
             <h2>Projects & Work Experience</h2>
             <ul>
-                <li><a href="https://github.com/Slsowmya12/fitnessguru.git">Project 1 - Fitness Guru</a> - A LLM-based real-time workout app</li>
-                <li><a href="https://github.com/Slsowmya12/Manas-Health.git">Project 2 - Manas Health</a> - A machine learning project for detecting mental health issues.</li>
+                <li><a href="https://github.com/Slsowmya12/fitnessguru.git" target="_blank">Project 1 - Fitness Guru</a> - A LLM-based real-time workout app</li>
+                <li><a href="https://github.com/Slsowmya12/Manas-Health.git" target="_blank">Project 2 - Manas Health</a> - A machine learning project for detecting mental health issues.</li>
             </ul>
         </section>
 
@@ -89,6 +112,14 @@
             <p>Email: <a href="mailto:slsowmya12@gmail.com">slsowmya12@gmail.com</a></p>
             <p>Phone: +91 95157 90649</p>
             <p>GitHub: <a href="https://github.com/Slsowmya12" target="_blank">github.com/Slsowmya12</a></p>
+
+            <!-- Contact Form -->
+            <form method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </div>
 </body>
