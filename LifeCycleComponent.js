@@ -34,7 +34,7 @@ class LifeCycleComponent extends React.Component {
 
     return (
       <div>
-        <h1>Lifecycle Demo (Class Component)</h1>
+        <h1>Fetching User Data (Class Component)</h1>
         <p><strong>Status:</strong> {status}</p>
 
         {users.length === 0 ? (
